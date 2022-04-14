@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="giohang">
+        <a onclick="laydon()"><img src="images/cart.jpg"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart">
+        <table>
+            <tbody id="mycart">
+            </tbody>
+        </table>
+    </div>
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a onclick="vaogiohang()">Giỏ Hàng</a></li>
+                <li><a href="#">Game Karo</a></li>
+                <li><a href="#">Bản Đồ</a></li>
+                <li><a href="dangky.html">Đăng Ký Thành Viên</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="row">
+                <div class="banner mb">
+                    <div id="kq">
+                        <img id="hinh" src="images/1.jpg" align='center' width="100%" height="100%">
+                        <div class="dieuhuong">
+                            <i class="fa fa-chevron-circle-left" onclick="prev()"></i>
+                            <i class="fa fa-chevron-circle-right" onclick="next()"></i>
+                        </div>
+                        <div id="sohinh" align='center'></div>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <tbody id="giohang"></tbody>
+            </table>
+            <div id="duoi">
+                <div class="row">
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/1.jpg" alt=""></div>
+                        <p>$<span>10</span></p>
+                        <a href="#">Iphone 13 PRO</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/2.jpg" alt=""></div>
+                        <p>$<span>20</span></p>
+                        <a href="#">Sam sung</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/3.jpg" alt=""></div>
+                        <p><span>15</span>k</p>
+                        <a href="#">Bánh Tráng Nướng</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/4.jpg" alt=""></div>
+                        <p>$<span>30</span>k</p>
+                        <a href="#">Nokia</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/5.jpg" alt=""></div>
+                        <p>$<span>40</span></p>
+                        <a href="#">Laptop Dell</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/6.jpg" alt=""></div>
+                        <p>$<span>50</span></p>
+                        <a href="#">Laptop Microsoft</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/7.jpg" alt=""></div>
+                        <p>$<span>60</span></p>
+                        <a href="#">Laptop vivo</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/8.jpg" alt=""></div>
+                        <p>$<span>70</span></p>
+                        <a href="#">Headphone</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/0.jpg" alt=""></div>
+                        <p>$<span>80</span></p>
+                        <a href="#">CLoa bluetooth JBL</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/9.jpg" alt=""></div>
+                        <p>$<span>90</span></p>
+                        <a href="#">Chuột Logitech</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <script>
+        showcountsp();
+    </script>
+</body>
+
+</html>
